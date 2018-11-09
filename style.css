@@ -1,0 +1,290 @@
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+* {
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+
+
+
+/* *** Setting Up Fonts *** */
+
+.name > h1 {
+    font: 100 30px sans-serif;
+    color: 2d3c49;
+
+}
+
+.projects > h2 {
+    text-align: center;
+    font: 100 20px  sans-serif;
+    color: 7d97ad;
+
+}
+
+
+.link-container > a > h2 {
+    font: 400 20px;
+    color: 2d3c49;
+}
+
+
+
+.link-container > a {
+    text-decoration: none;
+}
+
+
+.name .job-title {
+    font-size: 20px;
+    color: 02b3e4;
+}
+
+
+hr {
+    height: 1px;
+    border-color: 2d3c49;
+    background-color: 2d3c49;
+    width: 100%;
+    margin-top: -10px;
+
+}
+
+/* ****  Setting Up Alignments & Positioning *****  */
+
+header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.logo-container,
+.name {
+    width: 100%;
+    text-align: center;
+}
+
+
+.udacity-logo {
+    width: 15%;
+    height: auto;
+}
+
+
+.material-icons {
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    opacity: 1;
+
+}
+
+
+/*** Hover Effect***/
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
+
+/* Main Page image */
+
+.main-image {
+    background: url(https://dl.dropboxusercontent.com/s/tej8z8unr6030r2/800055.jpg?dl=0) no-repeat center/cover fixed;
+    width: 100%;
+    min-height: 300px;
+}
+
+
+.link-container {
+    text-align: center;
+    -ms-flex: 1 1 200px;
+    -webkit-box-flex: 1;
+    flex: 1 1 200px;
+    -webkit-box-shadow: 2px 2px 6px grey;
+    box-shadow: 2px 2px 6px grey;
+    margin: 10px;
+}
+
+
+.featured {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.project-item {
+    width: 100%;
+    height: auto;
+}
+
+/* responsive settings for smart devices*/
+@media screen and (min-width: 641px) {
+
+
+       .material-icons {
+        opacity: 0;
+    }
+
+    /* Setting Header as a Flex Item */
+    header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+
+    /**Spacing**/
+    .logo-container,
+    .name {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+        flex: 1 1 40%;
+
+    }
+
+    /* Alignment and Positioning */
+    .logo-container {
+        text-align: left;
+    }
+
+    .udacity-logo {
+        margin: 30px 3px;
+    }
+
+    .name {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: right;
+        padding: 5px;
+    }
+
+
+    /* Fonts and Colors, alignments adjustments */
+    .name > h1 {
+        font-size: 40px;
+        font-weight: 100;
+
+    }
+
+    .name .job-title {
+        color: 02b3e4;
+        font-size: 23px;
+        letter-spacing: 4px;
+        margin-top: -25px;
+    }
+
+
+    /* Optimised Image for large screen */
+    .main-image {
+        background: url(https://dl.dropboxusercontent.com/s/tej8z8unr6030r2/800055.jpg?dl=0) no-repeat center/cover fixed;
+        width: 100%;
+        min-height: 380px;
+        color: 
+    }
+
+
+    .featured > h2 {
+        padding: 5px;
+        font-size: 25px;
+        text-shadow: 2px 2px 4px grey;
+    }
+
+
+    /* Setting up Projects*/
+    .showcase {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-flex: 1;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+@media screen and (min-width: 961px) {
+
+
+    .udacity-logo {
+        margin: 40px 3px 1px;
+
+    }
+
+    /* Optimised Image-sets*/
+    .main-image {
+        background: -webkit-image-set(url(https://dl.dropboxusercontent.com/s/tej8z8unr6030r2/800055.jpg?dl=0) 1x,
+        url(https://dl.dropboxusercontent.com/s/tej8z8unr6030r2/800055.jpg?dl=0) 2x) no-repeat center;
+
+        background: image-set(url(https://dl.dropboxusercontent.com/s/tej8z8unr6030r2/800055.jpg?dl=0 1x,
+        url(https://dl.dropboxusercontent.com/s/tej8z8unr6030r2/800055.jpg?dl=0) 2x) no-repeat center;
+
+        background-size: cover;
+        width: 100%;
+        min-height: 400px;
+        background-attachment: fixed;
+        -webkit-box-shadow: 5px 6px 3px #999;
+        box-shadow: 5px 6px 3px #999;
+
+    }
+
+
+    /* Fonts and Colors, alignments adjustments */
+    .name > h1 {
+        font: 100 45px;
+    }
+
+
+    .featured > h2 {
+        padding: 5px;
+        font-size: 30px;
+        text-shadow: 3px 2px 4px grey;
+        text-align: left;
+    }
+
+    .link-container:hover {
+        -webkit-box-shadow: 4px 7px 3px grey;
+        box-shadow: 4px 7px 3px grey;
+
+    }
+
+    /***Adds shaddow to both Image and Card ***/
+    .project-item {
+        width: 100%;
+        height: auto;
+        -webkit-box-shadow: 3px 4px 1px grey;
+        box-shadow: 3px 4px 1px grey;
+        -webkit-box-sizing: border-box;
+
+    }
+
+
+    /*** Hover Effect*/
+    .project-item:hover {
+        -webkit-transform: scale(1.10);
+        transform: scale(1.10);
+    }
